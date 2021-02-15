@@ -13,12 +13,12 @@ namespace CustomDependancyInjection.DPI
             _dependancies = new();
         }
         
-        public void AddTransient<T>()
+        public void AddSingleton<T>()
         {
             _dependancies.Add(new Dependancy(typeof(T), DependancyLifetimes.Singleton));
         }
 
-        public void AddSingleton<T>()
+        public void AddTransient<T>()
         {
             _dependancies.Add(new Dependancy(typeof(T), DependancyLifetimes.Transient));
         }

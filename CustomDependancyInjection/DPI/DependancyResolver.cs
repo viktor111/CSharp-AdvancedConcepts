@@ -51,7 +51,7 @@ namespace CustomDependancyInjection
 
             object implementation = factory(dependancy.Type);
 
-            if (dependancy.Lifetimes == DependancyLifetimes.Singleton)
+            if (dependancy.Lifetimes == DependancyLifetimes.Transient)
             {
                 dependancy.AddImplementaion(implementation);
             }
