@@ -11,7 +11,7 @@ namespace CSharp_AdvancedConcepts.Examples
     {
         internal static void Examples()
         {
-            Example.GetMethodNames(Example.GetClassNames());
+            //Example.GetMethodNames(Example.GetClassNames());
         }
     }
 }

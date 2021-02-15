@@ -20,6 +20,11 @@ namespace CSharp_AdvancedConcepts
             {
                 RefelectionExampleCLI.Examples();
             }
+
+            if (input is "dpi")
+            {
+                DependancyInjectionCLI.RunExample();
+            }
         }
     }
 }
